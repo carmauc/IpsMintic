@@ -14,7 +14,7 @@ function listeners() {
 
         
 
-        fetch('http://localhost:8080')  //        fetch('https://secret-ocean-75313.herokuapp.com/')
+        fetch('https://daring-grape-production.up.railway.app')  //        fetch('https://secret-ocean-75313.herokuapp.com/')
             .then((historias) => historias.json())
             .then((historias) => {
                 /* filtrar por id */

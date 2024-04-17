@@ -154,7 +154,7 @@ btn_submit.addEventListener('click', function(){
 
 
     if (queryString == ''){
-        fetch('http://localhost:8080', //'https://secret-ocean-75313.herokuapp.com/'
+        fetch('https://daring-grape-production.up.railway.app', //'https://secret-ocean-75313.herokuapp.com/'
          {
         method: 'POST',
         headers: {
@@ -168,7 +168,7 @@ btn_submit.addEventListener('click', function(){
         window.location.href = './historias.html';
     })
     } else {
-        fetch(`http://localhost:8080/${queryString}`,// `https://secret-ocean-75313.herokuapp.com/${queryString}`
+        fetch(`https://daring-grape-production.up.railway.app/${queryString}`,// `https://secret-ocean-75313.herokuapp.com/${queryString}`
          {
         method: 'PUT',
         headers: {
@@ -188,7 +188,7 @@ btn_submit.addEventListener('click', function(){
 
 
 if (queryString !== ""){
-    fetch(`http://localhost:8080/${queryString}`) //`https://secret-ocean-75313.herokuapp.com/${queryString}`
+    fetch(`https://daring-grape-production.up.railway.app/${queryString}`) //`https://secret-ocean-75313.herokuapp.com/${queryString}`
     .then(res => res.json())
     .then(data => {
         //console.log(data);

@@ -1,6 +1,6 @@
 
 
-const get = 'https://localhost:8080/api/historias';
-const post = 'https://localhost:8080/api/historias';
-const put = 'https://localhost:8080/api/historias/:id';
-const del = 'https://localhost:8080/api/historias/:id';
+const get = 'https://daring-grape-production.up.railway.app/api/historias';
+const post = 'https://daring-grape-production.up.railway.app/api/historias';
+const put = 'https://daring-grape-production.up.railway.app/api/historias/:id';
+const del = 'https://daring-grape-production.up.railway.app/api/historias/:id';
