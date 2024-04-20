@@ -40,17 +40,16 @@ private Paciente_service paciente_service;
 
 @DeleteMapping ("/{id}")
 public ResponseEntity<Paciente> borrarPaciente(@PathVariable int id){
-      paciente_service.borrarPaciente(id);
-     //Retornar el paciente borrado
-      return new ResponseEntity<Paciente>(HttpStatus.OK);
+  paciente_service.borrarPaciente(id);
+     return new ResponseEntity<>(HttpStatus.OK);
+
 }
 
 @PostMapping
 public ResponseEntity<Paciente> guardarPaciente(@RequestBody  Paciente paciente){
      paciente_service.guardarPaciente(paciente);
      System.out.println(paciente.toString());
-        //retornar el paciente guardado
-      return new ResponseEntity<>(paciente, HttpStatus.CREATED);
+        return new ResponseEntity<>(HttpStatus.CREATED);
 
 } 
 
