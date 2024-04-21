@@ -154,7 +154,7 @@ btn_submit.addEventListener('click', function(){
 
 
     if (queryString == ''){
-        fetch('https://daring-grape-production.up.railway.app', //'https://secret-ocean-75313.herokuapp.com/'
+        fetch('https://daring-grape-production.up.railway.app/', //'https://secret-ocean-75313.herokuapp.com/'
          {
         method: 'POST',
         headers: {

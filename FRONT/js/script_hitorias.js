@@ -8,7 +8,7 @@ listeners();
 function listeners() {
     document.addEventListener('DOMContentLoaded', () => {
 
-        fetch('https://daring-grape-production.up.railway.app') //https://secret-ocean-75313.herokuapp.com/
+        fetch('https://daring-grape-production.up.railway.app/') //https://secret-ocean-75313.herokuapp.com/
             .then((historias) => historias.json())
             .then((historias) => {
                 domRender(historias)
